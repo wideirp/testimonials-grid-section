@@ -149,6 +149,8 @@ main .quote5 {
 }
 
 .graduate {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
 }
@@ -167,18 +169,34 @@ main .quote5 {
 .graduate .graduate__name-wrapper .verified {
   font-size: 0.6875rem;
   font-weight: 200;
+  color: #cfcfcf;
   margin: 0;
 }
 
 .quote-highlight {
+  position: relative;
   font-size: 1.25rem;
   font-weight: 700;
-  color: #48556a;
+  z-index: 1;
 }
 
 .quote-main {
+  position: relative;
   font-size: 0.8125rem;
   color: #cfcfcf;
+  z-index: 1;
+}
+
+.quote1 {
+  color: white;
+  position: relative;
+  background-color: #733fc8;
+}
+.quote1::after {
+  content: url("../images/bg-pattern-quotation.svg");
+  position: absolute;
+  right: 4.125rem;
+  top: 0;
 }
 
 .attribution {

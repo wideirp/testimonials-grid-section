@@ -1,6 +1,8 @@
 @use "variables";
 
 .graduate {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
 
@@ -19,18 +21,34 @@
     .verified {
       font-size: variables.$fs-200;
       font-weight: variables.$fw-200;
+      color: variables.$clr-neutral-200;
       margin: 0;
     }
   }
 }
 
 .quote-highlight {
+  position: relative;
   font-size: variables.$fs-500;
   font-weight: variables.$fw-700;
-  color: variables.$clr-neutral-400;
+  z-index: 1;
 }
 
 .quote-main {
+  position: relative;
   font-size: variables.$fs-300;
   color: variables.$clr-neutral-200;
+  z-index: 1;
+}
+
+.quote1 {
+  color: white;
+  position: relative;
+  &::after {
+    content: url("../images/bg-pattern-quotation.svg");
+    position: absolute;
+    right: variables.$spacer-800;
+    top: 0;
+  }
+  background-color: variables.$clr-primary-600;
 }
