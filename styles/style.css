@@ -100,7 +100,7 @@ main {
   border: 1px solid red;
 }
 main article {
-  border: 1px solid blue;
+  background-color: white;
 }
 
 body {
@@ -130,6 +130,55 @@ main .quote4 {
 }
 main .quote5 {
   grid-area: 1/4/span 2/span 1;
+}
+
+.flow > * + * {
+  margin-bottom: 1rem;
+}
+
+.border-radius {
+  border-radius: 8px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.padding {
+  padding: 1.625rem 2rem;
+}
+
+.graduate {
+  display: flex;
+  align-items: center;
+}
+.graduate .graduate__image {
+  width: 1.75rem;
+  margin-right: 1rem;
+}
+.graduate .graduate__name-wrapper {
+  line-height: normal;
+}
+.graduate .graduate__name-wrapper .name {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  margin: 0;
+}
+.graduate .graduate__name-wrapper .verified {
+  font-size: 0.6875rem;
+  font-weight: 200;
+  margin: 0;
+}
+
+.quote-highlight {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #48556a;
+}
+
+.quote-main {
+  font-size: 0.8125rem;
+  color: #cfcfcf;
 }
 
 .attribution {

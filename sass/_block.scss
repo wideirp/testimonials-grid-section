@@ -1,0 +1,36 @@
+@use "variables";
+
+.graduate {
+  display: flex;
+  align-items: center;
+
+  .graduate__image {
+    width: 1.75rem;
+    margin-right: variables.$spacer-400;
+  }
+
+  .graduate__name-wrapper {
+    line-height: normal;
+    .name {
+      font-size: variables.$fs-300;
+      font-weight: variables.$fw-400;
+      margin: 0;
+    }
+    .verified {
+      font-size: variables.$fs-200;
+      font-weight: variables.$fw-200;
+      margin: 0;
+    }
+  }
+}
+
+.quote-highlight {
+  font-size: variables.$fs-500;
+  font-weight: variables.$fw-700;
+  color: variables.$clr-neutral-400;
+}
+
+.quote-main {
+  font-size: variables.$fs-300;
+  color: variables.$clr-neutral-200;
+}
