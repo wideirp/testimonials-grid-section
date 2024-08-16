@@ -1,0 +1,35 @@
+@use "variables";
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+main {
+  max-width: clamp(310px, calc(0.5rem + 80vw), 70rem);
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  gap: variables.$spacer-400;
+
+  .quote1 {
+    grid-area: 1 / 1 / span 1 / span 2;
+  }
+
+  .quote2 {
+    grid-area: 1 / 3 / span 1 / span 1;
+  }
+
+  .quote3 {
+    grid-area: 2 / 1 / span 1 / span 1;
+  }
+
+  .quote4 {
+    grid-area: 2 / 2 / span 1 / span 2;
+  }
+
+  .quote5 {
+    grid-area: 1 / 4 / span 2 / span 1;
+  }
+}
