@@ -96,21 +96,16 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
-main {
-  border: 1px solid red;
-}
-main article {
-  background-color: white;
-}
-
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin: 0;
 }
 
 main {
+  margin: auto;
   max-width: clamp(310px, 0.5rem + 80vw, 70rem);
   display: grid;
   grid-template: repeat(2, 1fr)/repeat(4, 1fr);
@@ -199,9 +194,26 @@ main .quote5 {
   top: 0;
 }
 
+.quote2 {
+  color: white;
+  background-color: #48556a;
+}
+
+.quote3,
+.quote5 {
+  color: #48556a;
+  background-color: white;
+}
+
+.quote4 {
+  color: white;
+  background-color: #19202d;
+}
+
 .attribution {
   font-size: 0.75rem;
   text-align: center;
+  padding: 1rem;
 }
 
 .attribution a {

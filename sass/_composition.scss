@@ -4,10 +4,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin: 0;
 }
 
 main {
+  margin: auto;
   max-width: clamp(310px, calc(0.5rem + 80vw), 70rem);
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(4, 1fr);

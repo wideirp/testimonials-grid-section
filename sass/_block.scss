@@ -52,3 +52,29 @@
   }
   background-color: variables.$clr-primary-600;
 }
+
+.quote2 {
+  color: white;
+  background-color: variables.$clr-neutral-400;
+}
+
+.quote3,
+.quote5 {
+  color: variables.$clr-neutral-400;
+  background-color: white;
+}
+
+.quote4 {
+  color: white;
+  background-color: variables.$clr-neutral-800;
+}
+
+.attribution {
+  font-size: 0.75rem;
+  text-align: center;
+  padding: variables.$spacer-400;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
