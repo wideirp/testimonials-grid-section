@@ -127,6 +127,33 @@ main .quote5 {
   grid-area: 1/4/span 2/span 1;
 }
 
+@media screen and (max-width: 1140px) {
+  main {
+    margin-top: 4.125rem;
+    grid-template: repeat(4, 1fr)/repeat(2, 1fr);
+  }
+  main .quote1 {
+    grid-area: 1/1/span 2/span 1;
+  }
+  main .quote2 {
+    grid-area: 1/2/span 1/span 1;
+  }
+  main .quote3 {
+    grid-area: 2/2/span 1/span 1;
+  }
+  main .quote4 {
+    grid-area: 3/1/span 2/span 1;
+  }
+  main .quote5 {
+    grid-area: 3/2/span 2/span 1;
+  }
+}
+@media screen and (max-width: 620px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .flow > * + * {
   margin-bottom: 1rem;
 }

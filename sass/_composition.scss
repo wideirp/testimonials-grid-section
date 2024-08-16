@@ -35,3 +35,37 @@ main {
     grid-area: 1 / 4 / span 2 / span 1;
   }
 }
+
+@media screen and (max-width: 1140px) {
+  main {
+    margin-top: variables.$spacer-800;
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+
+    .quote1 {
+      grid-area: 1 / 1 / span 2 / span 1;
+    }
+
+    .quote2 {
+      grid-area: 1 / 2 / span 1 / span 1;
+    }
+
+    .quote3 {
+      grid-area: 2 / 2 / span 1 / span 1;
+    }
+
+    .quote4 {
+      grid-area: 3 / 1 / span 2 / span 1;
+    }
+
+    .quote5 {
+      grid-area: 3 / 2 / span 2 / span 1;
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
